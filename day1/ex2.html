@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <script>
+        a=prompt("Enter a number ");
+        sum=0;
+        z=a;
+        while(a>0)
+        {
+            b=a%10;
+            sum=sum*10+b;
+            a=parseInt(a/10);
+        }
+        console.log(sum);
+        if(z==sum)
+        {
+            console.log("Palindrome is ",sum);
+        }
+        else{
+            console.log("Not palindrome is "+sum);
+        }
+    </script>
+</body>
+</html>

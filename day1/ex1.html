@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number using while loop</title>
+</head>
+<body>
+    <script>
+        let n=prompt("Enter a number");
+        c=2;
+        if(n==2)
+        {
+            console.log("Prime");
+        }
+        else{
+        while(c<n)
+        {
+            if(n%c==0)
+            {
+
+                console.log("Not Prime");
+                break;
+            }
+            else
+            {
+                console.log("Prime");
+                break;
+            }
+            c++;
+        }
+        }
+    </script>
+</body>
+</html>

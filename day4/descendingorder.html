@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descending Order</title>
+</head>
+<body>
+    <script>
+        var a=[1,2,3,4,5,6,7,8,100,10,21];
+        for(i=0;i<a.length;i++){
+            for(j=i+1;j<a.length;j++){
+                if(a[i]<a[j]){
+                    temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                    // console.log(temp);
+                }
+            }
+        }
+        console.log(a)
+        // var desc=document.createElement("h1");
+        // desc.innerHTML="";
+        // console.log(desc);
+    </script>
+</body>
+</html>
